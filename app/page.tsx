@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center">
@@ -9,9 +11,11 @@ export default function Home() {
         Smart Relocation Management Platform
       </p>
 
-      <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700">
-        Login
-      </button>
+      <Link href="/login">
+        <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700">
+          Login
+        </button>
+      </Link>
     </main>
   );
 }
